@@ -1,0 +1,14 @@
+{
+  "name": "temp",
+  "description": "",
+  "homepage": "",
+  "keywords": [
+  ],
+  "author": "",
+  "private": true,
+  "dependencies": {
+    "polymer": "Polymer/polymer#master",
+    "paper-elements": "Polymer/paper-fab#master",
+    "paper-elements": "Polymer/core-icons#master"
+  }
+}
