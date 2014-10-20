@@ -17,11 +17,28 @@
                   fit>
     </video-webcam>
 
+    <div layout horizontal center fit>
+
+      <img id="overlay"
+           src="/assets/overlays/{{overlays[overlayIndex]}}.png">
+
+    </div>
+
     <style>
 
       :host{
 
         background-color: black;
+
+      }
+
+      #overlay{
+
+        display: block;
+
+        width: 100%;
+
+        height: auto;
 
       }
 
