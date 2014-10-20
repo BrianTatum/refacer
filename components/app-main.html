@@ -1,0 +1,35 @@
+<link rel="import"
+      href="../bower_components/polymer/polymer.html">
+
+<link rel="import"
+      href="../bower_components/video-webcam/video-webcam.html">
+
+<polymer-element name="app-main">
+
+  <template>
+
+    <video-webcam id="stream"
+                  autoStart
+                  noAudio
+                  mirrorX
+                  resolution="high"
+                  grayScale
+                  fit>
+    </video-webcam>
+
+    <style>
+
+      :host{
+
+        background-color: black;
+
+      }
+
+    </style>
+
+  </template>
+
+  <script src="app-main.js">
+  </script>
+
+</polymer-element>
