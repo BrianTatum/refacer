@@ -8,11 +8,18 @@
 
   <template>
 
+    <audio id="sound">
+
+      <source src="/assets/holga-shutter-release.wav">
+
+    </audio>
+
     <video-webcam id="stream"
                   autoStart
                   noAudio
                   mirrorX
                   resolution="high"
+                  captureCanvas="{{cap}}"
                   grayScale
                   fit>
     </video-webcam>
@@ -24,11 +31,35 @@
 
     </div>
 
+    <div id="flash" fit></div>
+
     <style>
 
       :host{
 
         background-color: black;
+
+      }
+
+      #flash{
+
+        transition: 1s;
+
+        -webkit-transform: scale(1);
+
+        opacity: 0;
+
+        background: -webkit-radial-gradient(rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0));
+
+      }
+
+      #flash.flash{
+
+        transition: 0.05s;
+
+        -webkit-transform: scale(5);
+
+        opacity: 1;
 
       }
 
